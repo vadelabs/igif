@@ -1732,6 +1732,17 @@
                     opacity: 0.5;
                 }
             }
+
+            /* Mobile Menu Responsive Styles */
+            #mobile-menu-toggle {
+                display: inline-flex;
+            }
+            
+            @media (min-width: 1024px) {
+                #mobile-menu-toggle {
+                    display: none !important;
+                }
+            }
         </style>
         <script defer type="text/javascript">
             var fulcro_network_csrf_token = "8ywFui+82IvzvIdXQhHeMYa8qdum/U0MRrbSwX+uqnE0bZUGaJ28bYZ7NaZVyRBg4iyBdpXwwZPcP3zn";
@@ -2024,6 +2035,400 @@
                                 devMode=""
                                 decoding="async"
                             />
+                        </div>
+                        <!-- Mobile Menu Toggle -->
+                        <div id="mobile-menu-toggle" class="flex" style="display: flex;" data-signals='{"d97efbb5-667c-4c81-890e-9a27603d0374":{"visible":false}}' mediaPrefix="" devMode="">
+                            <button 
+                                id="96cf473d-5d16-45f2-9da1-eaf610f5de5d" 
+                                class="inline-flex items-center justify-center font-medium rounded-lg focus:outline-none p-2 bg-green-600 hover:bg-green-700 active:bg-green-800 text-white transition-colors" 
+                                style="display: inline-flex; align-items: center; justify-content: center; font-weight: 500; border-radius: 0.5rem; outline: none; padding: 0.5rem; background-color: rgb(22 163 74); color: white; transition-property: color, background-color, border-color, text-decoration-color, fill, stroke; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-duration: 150ms;"
+                                type="button" 
+                                data-on-click="$d97efbb5-667c-4c81-890e-9a27603d0374.visible = true" 
+                                mediaPrefix=""
+                                devMode=""
+                            >
+                                <svg fill="currentColor" width="1em" xmlns="http://www.w3.org/2000/svg" id="1c14abe5-4e5f-4c9c-8a1c-4c6e1d41bf26" class="inline-block size-6" style="display: inline-block; width: 1.5rem; height: 1.5rem;" mediaPrefix="" viewBox="0 0 24 24" height="1em">
+                                    <use xlink:href="/sprites/lucide.svg#menu"></use>
+                                </svg>
+                            </button>
+                            <div
+                                id="c280facc-2abf-4386-85ad-c1e7dd440262"
+                                class="fixed inset-0 z-50 bg-black/50 backdrop-blur-sm transition-opacity duration-300"
+                                style="position: fixed; inset: 0; z-index: 50; background-color: rgba(0, 0, 0, 0.5); backdrop-filter: blur(4px); transition-property: opacity; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-duration: 300ms; display: none;"
+                                tabindex="-1"
+                                data-attr-aria-hidden="!$d97efbb5-667c-4c81-890e-9a27603d0374.visible"
+                                data-show="$d97efbb5-667c-4c81-890e-9a27603d0374.visible"
+                                data-on-click="$d97efbb5-667c-4c81-890e-9a27603d0374.visible = false"
+                                mediaPrefix=""
+                                devMode=""
+                            >
+                                <div
+                                    role="dialog"
+                                    data-state="$d97efbb5-667c-4c81-890e-9a27603d0374.visible ? &#x27;open&#x27; : &#x27;closed&#x27;"
+                                    data-show="$d97efbb5-667c-4c81-890e-9a27603d0374.visible"
+                                    aria-modal="true"
+                                    id="c677329a-dbed-4ad7-bece-a886ce53aa8e"
+                                    class="fixed right-0 top-0 h-full w-80 bg-white shadow-2xl transform transition-transform duration-300 ease-in-out translate-x-full data-[state=open]:translate-x-0 overflow-y-auto"
+                                    style="position: fixed; right: 0; top: 0; height: 100%; width: 20rem; background-color: white; box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25); transition-property: transform; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-duration: 300ms; overflow-y: auto;"
+                                    data-on-click="event.stopPropagation()"
+                                    mediaPrefix=""
+                                    devMode=""
+                                >
+                                    <div id="5862e097-cd38-443e-b336-8941bca56f86" class="flex flex-col h-full bg-gradient-to-br from-green-600 via-emerald-600 to-green-700" style="display: flex; flex-direction: column; height: 100%; background-image: linear-gradient(to bottom right, rgb(22 163 74), rgb(5 150 105), rgb(21 128 61));" mediaPrefix="" devMode="">
+                                        <!-- Header -->
+                                        <div id="48e9f699-53f6-458a-a979-d820af91a209" class="flex items-center justify-between p-6 border-b border-white/20" style="display: flex; align-items: center; justify-content: space-between; padding: 1.5rem; border-bottom-width: 1px; border-color: rgba(255, 255, 255, 0.2);" mediaPrefix="">
+                                            <div>
+                                                <img
+                                                    data-on-error="evt.target.src=&#x27;https://vadeai.app/artifacts/placeholder_image_webp_2d7e9db1856ba2403d94c7ba095a21ad&#x27;"
+                                                    alt="IGIF Logo"
+                                                    src="https://cdn.vadeai.app/igif/igif-logo.png"
+                                                    title="Image"
+                                                    loading="lazy"
+                                                    id="f7d50c6b-f652-4d2d-93b4-61e76fcca637"
+                                                    class="h-10 w-auto brightness-0 invert"
+                                                    style="height: 2.5rem; width: auto; filter: brightness(0) invert(1);"
+                                                    mediaPrefix=""
+                                                    decoding="async"
+                                                />
+                                            </div>
+                                            <button
+                                                class="p-2 rounded-lg hover:bg-white/10 transition-colors text-white"
+                                                style="padding: 0.5rem; border-radius: 0.5rem; transition-property: color, background-color, border-color, text-decoration-color, fill, stroke; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-duration: 150ms; color: white;"
+                                                data-on-click="$d97efbb5-667c-4c81-890e-9a27603d0374.visible = false"
+                                            >
+                                                <svg class="inline-block w-6 h-6" style="display: inline-block; width: 1.5rem; height: 1.5rem;" width="1em" height="1em" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                    <use xlink:href="/sprites/lucide.svg#x"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+
+                                        <!-- Navigation Items -->
+                                        <div id="e7601ffc-c042-4d81-a993-71ba48571680" class="flex-1 py-6 px-4 overflow-y-auto" style="flex: 1 1 0%; padding-top: 1.5rem; padding-bottom: 1.5rem; padding-left: 1rem; padding-right: 1rem; overflow-y: auto;" mediaPrefix="">
+                                            <nav id="00a2c76e-3858-4d18-8b6c-799ab991a520" class="space-y-2" style="display: flex; flex-direction: column; gap: 0.5rem;" mediaPrefix="">
+                                                <!-- Home -->
+                                                <div id="429376ab-cd4d-435f-af29-2a3e32fcebf4" class="group" mediaPrefix="">
+                                                    <button
+                                                        id="3adfcff6-e18e-4156-9596-98025c104870"
+                                                        class="w-full flex items-center gap-3 py-3 px-4 rounded-lg text-white hover:bg-white/10 transition-all duration-200 font-medium"
+                                                        style="width: 100%; display: flex; align-items: center; gap: 0.75rem; padding-top: 0.75rem; padding-bottom: 0.75rem; padding-left: 1rem; padding-right: 1rem; border-radius: 0.5rem; color: white; transition-property: all; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-duration: 200ms; font-weight: 500;"
+                                                        title="Home"
+                                                        mediaPrefix=""
+                                                        data-on-click="window.location.href = &#x27;/&#x27;"
+                                                    >
+                                                        <svg
+                                                            fill="currentColor"
+                                                            width="1em"
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                            id="443aa9bf-066f-4f34-9cb9-5a21bee4f8dd"
+                                                            class="w-5 h-5"
+                                                            style="width: 1.25rem; height: 1.25rem;"
+                                                            mediaPrefix=""
+                                                            viewBox="0 0 24 24"
+                                                            height="1em"
+                                                        >
+                                                            <use xlink:href="/sprites/lucide.svg#house"></use>
+                                                        </svg>
+                                                        <span>Home</span>
+                                                    </button>
+                                                </div>
+
+                                                <!-- Our Annual Events -->
+                                                <div id="466d90e3-8db4-448c-bf9b-cacccb010cfb" class="group">
+                                                    <button
+                                                        id="afaa23b6-b3dc-436d-abbd-84f232c3d74a"
+                                                        class="w-full flex items-center gap-3 py-3 px-4 rounded-lg text-white hover:bg-white/10 transition-all duration-200 font-medium"
+                                                        style="width: 100%; display: flex; align-items: center; gap: 0.75rem; padding-top: 0.75rem; padding-bottom: 0.75rem; padding-left: 1rem; padding-right: 1rem; border-radius: 0.5rem; color: white; transition-property: all; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-duration: 200ms; font-weight: 500;"
+                                                        title="Our Annual Events"
+                                                        mediaPrefix=""
+                                                        data-on-click="window.location.href = 'https://indiagreeninvestment.com/annual-events'"
+                                                    >
+                                                        <svg
+                                                            fill="currentColor"
+                                                            width="1em"
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                            id="9daf6dc6-3286-44f2-b201-df1f51585d05"
+                                                            class="w-5 h-5"
+                                                            style="width: 1.25rem; height: 1.25rem;"
+                                                            mediaPrefix=""
+                                                            viewBox="0 0 24 24"
+                                                            height="1em"
+                                                        >
+                                                            <use xlink:href="/sprites/lucide.svg#calendar-days"></use>
+                                                        </svg>
+                                                        <span>Our Annual Events</span>
+                                                    </button>
+                                                </div>
+
+                                                <!-- Agenda -->
+                                                <div class="group">
+                                                    <button
+                                                        class="w-full flex items-center gap-3 py-3 px-4 rounded-lg text-white hover:bg-white/10 transition-all duration-200 font-medium"
+                                                        style="width: 100%; display: flex; align-items: center; gap: 0.75rem; padding-top: 0.75rem; padding-bottom: 0.75rem; padding-left: 1rem; padding-right: 1rem; border-radius: 0.5rem; color: white; transition-property: all; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-duration: 200ms; font-weight: 500;"
+                                                        title="Agenda"
+                                                        mediaPrefix=""
+                                                        data-on-click="window.location.href = 'https://indiagreeninvestment.com#agenda'"
+                                                    >
+                                                        <svg
+                                                            fill="currentColor"
+                                                            width="1em"
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                            class="w-5 h-5"
+                                                            style="width: 1.25rem; height: 1.25rem;"
+                                                            mediaPrefix=""
+                                                            viewBox="0 0 24 24"
+                                                            height="1em"
+                                                        >
+                                                            <use xlink:href="/sprites/lucide.svg#list"></use>
+                                                        </svg>
+                                                        <span>Agenda</span>
+                                                    </button>
+                                                </div>
+
+                                                <!-- Speakers -->
+                                                <div class="group">
+                                                    <button
+                                                        class="w-full flex items-center gap-3 py-3 px-4 rounded-lg text-white hover:bg-white/10 transition-all duration-200 font-medium"
+                                                        style="width: 100%; display: flex; align-items: center; gap: 0.75rem; padding-top: 0.75rem; padding-bottom: 0.75rem; padding-left: 1rem; padding-right: 1rem; border-radius: 0.5rem; color: white; transition-property: all; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-duration: 200ms; font-weight: 500;"
+                                                        title="Speakers"
+                                                        mediaPrefix=""
+                                                        data-on-click="window.location.href = 'https://indiagreeninvestment.com#speakers'"
+                                                    >
+                                                        <svg
+                                                            fill="currentColor"
+                                                            width="1em"
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                            class="w-5 h-5"
+                                                            style="width: 1.25rem; height: 1.25rem;"
+                                                            mediaPrefix=""
+                                                            viewBox="0 0 24 24"
+                                                            height="1em"
+                                                        >
+                                                            <use xlink:href="/sprites/lucide.svg#users"></use>
+                                                        </svg>
+                                                        <span>Speakers</span>
+                                                    </button>
+                                                </div>
+
+                                                <!-- About IGIF -->
+                                                <div class="group">
+                                                    <button
+                                                        class="w-full flex items-center gap-3 py-3 px-4 rounded-lg text-white hover:bg-white/10 transition-all duration-200 font-medium"
+                                                        style="width: 100%; display: flex; align-items: center; gap: 0.75rem; padding-top: 0.75rem; padding-bottom: 0.75rem; padding-left: 1rem; padding-right: 1rem; border-radius: 0.5rem; color: white; transition-property: all; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-duration: 200ms; font-weight: 500;"
+                                                        title="About IGIF"
+                                                        mediaPrefix=""
+                                                        data-on-click="window.location.href = 'https://indiagreeninvestment.com#about-igif'"
+                                                    >
+                                                        <svg
+                                                            fill="currentColor"
+                                                            width="1em"
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                            class="w-5 h-5"
+                                                            style="width: 1.25rem; height: 1.25rem;"
+                                                            mediaPrefix=""
+                                                            viewBox="0 0 24 24"
+                                                            height="1em"
+                                                        >
+                                                            <use xlink:href="/sprites/lucide.svg#info"></use>
+                                                        </svg>
+                                                        <span>About IGIF</span>
+                                                    </button>
+                                                </div>
+
+                                                <!-- Sponsorship -->
+                                                <div class="group">
+                                                    <button
+                                                        class="w-full flex items-center gap-3 py-3 px-4 rounded-lg text-white hover:bg-white/10 transition-all duration-200 font-medium"
+                                                        style="width: 100%; display: flex; align-items: center; gap: 0.75rem; padding-top: 0.75rem; padding-bottom: 0.75rem; padding-left: 1rem; padding-right: 1rem; border-radius: 0.5rem; color: white; transition-property: all; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-duration: 200ms; font-weight: 500;"
+                                                        title="Sponsorship"
+                                                        mediaPrefix=""
+                                                        data-on-click="window.location.href = 'https://indiagreeninvestment.com#sponsorship'"
+                                                    >
+                                                        <svg
+                                                            fill="currentColor"
+                                                            width="1em"
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                            class="w-5 h-5"
+                                                            style="width: 1.25rem; height: 1.25rem;"
+                                                            mediaPrefix=""
+                                                            viewBox="0 0 24 24"
+                                                            height="1em"
+                                                        >
+                                                            <use xlink:href="/sprites/lucide.svg#handshake"></use>
+                                                        </svg>
+                                                        <span>Sponsorship</span>
+                                                    </button>
+                                                </div>
+
+                                                <!-- Publications -->
+                                                <div class="group">
+                                                    <button
+                                                        class="w-full flex items-center gap-3 py-3 px-4 rounded-lg text-white hover:bg-white/10 transition-all duration-200 font-medium"
+                                                        style="width: 100%; display: flex; align-items: center; gap: 0.75rem; padding-top: 0.75rem; padding-bottom: 0.75rem; padding-left: 1rem; padding-right: 1rem; border-radius: 0.5rem; color: white; transition-property: all; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-duration: 200ms; font-weight: 500;"
+                                                        title="Publications"
+                                                        mediaPrefix=""
+                                                        data-on-click="window.location.href = 'https://indiagreeninvestment.com#publications'"
+                                                    >
+                                                        <svg
+                                                            fill="currentColor"
+                                                            width="1em"
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                            class="w-5 h-5"
+                                                            style="width: 1.25rem; height: 1.25rem;"
+                                                            mediaPrefix=""
+                                                            viewBox="0 0 24 24"
+                                                            height="1em"
+                                                        >
+                                                            <use xlink:href="/sprites/lucide.svg#book-open"></use>
+                                                        </svg>
+                                                        <span>Publications</span>
+                                                    </button>
+                                                </div>
+
+                                                <!-- About Us Divider -->
+                                                <div class="pt-4 pb-2" style="padding-top: 1rem; padding-bottom: 0.5rem;">
+                                                    <p class="text-xs font-bold tracking-wider text-white/60 px-4" style="font-size: 0.75rem; line-height: 1rem; font-weight: 700; letter-spacing: 0.05em; color: rgba(255, 255, 255, 0.6); padding-left: 1rem; padding-right: 1rem;">ABOUT US</p>
+                                                </div>
+
+                                                <!-- About IIC -->
+                                                <div class="group">
+                                                    <button
+                                                        class="w-full flex items-center gap-3 py-3 px-4 rounded-lg text-white hover:bg-white/10 transition-all duration-200 font-medium"
+                                                        style="width: 100%; display: flex; align-items: center; gap: 0.75rem; padding-top: 0.75rem; padding-bottom: 0.75rem; padding-left: 1rem; padding-right: 1rem; border-radius: 0.5rem; color: white; transition-property: all; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-duration: 200ms; font-weight: 500;"
+                                                        title="About IIC"
+                                                        mediaPrefix=""
+                                                        data-on-click="window.open(&#x27;https://iiic.in/&#x27;)"
+                                                    >
+                                                        <svg
+                                                            fill="currentColor"
+                                                            width="1em"
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                            class="w-5 h-5"
+                                                            style="width: 1.25rem; height: 1.25rem;"
+                                                            mediaPrefix=""
+                                                            viewBox="0 0 24 24"
+                                                            height="1em"
+                                                        >
+                                                            <use xlink:href="/sprites/lucide.svg#building"></use>
+                                                        </svg>
+                                                        <span>About IIC</span>
+                                                    </button>
+                                                </div>
+
+                                                <!-- Executive Council -->
+                                                <div class="group">
+                                                    <button
+                                                        class="w-full flex items-center gap-3 py-3 px-4 rounded-lg text-white hover:bg-white/10 transition-all duration-200 font-medium"
+                                                        style="width: 100%; display: flex; align-items: center; gap: 0.75rem; padding-top: 0.75rem; padding-bottom: 0.75rem; padding-left: 1rem; padding-right: 1rem; border-radius: 0.5rem; color: white; transition-property: all; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-duration: 200ms; font-weight: 500;"
+                                                        title="Executive Council"
+                                                        mediaPrefix=""
+                                                        data-on-click="window.open(&#x27;https://iiic.in/executive-council/&#x27;)"
+                                                    >
+                                                        <svg
+                                                            fill="currentColor"
+                                                            width="1em"
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                            class="w-5 h-5"
+                                                            style="width: 1.25rem; height: 1.25rem;"
+                                                            mediaPrefix=""
+                                                            viewBox="0 0 24 24"
+                                                            height="1em"
+                                                        >
+                                                            <use xlink:href="/sprites/lucide.svg#users-round"></use>
+                                                        </svg>
+                                                        <span>Executive Council</span>
+                                                    </button>
+                                                </div>
+
+                                                <!-- Team IIC -->
+                                                <div id="68f83cf1-e0dc-4c46-b426-5675141e88d4" class="group">
+                                                    <button
+                                                        id="660e0b9f-d618-49a8-947a-a5af168312cb"
+                                                        class="w-full flex items-center gap-3 py-3 px-4 rounded-lg text-white hover:bg-white/10 transition-all duration-200 font-medium"
+                                                        style="width: 100%; display: flex; align-items: center; gap: 0.75rem; padding-top: 0.75rem; padding-bottom: 0.75rem; padding-left: 1rem; padding-right: 1rem; border-radius: 0.5rem; color: white; transition-property: all; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-duration: 200ms; font-weight: 500;"
+                                                        title="Team IIC"
+                                                        mediaPrefix=""
+                                                        data-on-click="window.open(&#x27;https://iiic.in/iic-team/&#x27;)"
+                                                    >
+                                                        <svg
+                                                            fill="currentColor"
+                                                            width="1em"
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                            id="6ae984c9-76db-4adf-af27-c5637fc40e80"
+                                                            class="w-5 h-5"
+                                                            style="width: 1.25rem; height: 1.25rem;"
+                                                            mediaPrefix=""
+                                                            viewBox="0 0 24 24"
+                                                            height="1em"
+                                                        >
+                                                            <use xlink:href="/sprites/lucide.svg#user-round"></use>
+                                                        </svg>
+                                                        <span>Team IIC</span>
+                                                    </button>
+                                                </div>
+                                            </nav>
+                                        </div>
+
+                                        <!-- Footer CTA -->
+                                        <div id="05fd400d-dd9c-4171-8baf-1eff0350e8a0" class="p-6 border-t border-white/20 bg-gradient-to-t from-black/10" style="padding: 1.5rem; border-top-width: 1px; border-color: rgba(255, 255, 255, 0.2); background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1));">
+                                            <button
+                                                id="f8cf1aee-727a-40fa-93d9-82cdd90aba1e"
+                                                class="w-full inline-flex items-center justify-center gap-2 focus:outline-none bg-white text-green-700 font-bold py-3 px-6 rounded-lg transition-all duration-200 hover:bg-green-50 hover:shadow-lg transform hover:scale-105"
+                                                style="width: 100%; display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; outline: none; background-color: white; color: rgb(21 128 61); font-weight: 700; padding-top: 0.75rem; padding-bottom: 0.75rem; padding-left: 1.5rem; padding-right: 1.5rem; border-radius: 0.5rem; transition-property: all; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-duration: 200ms;"
+                                                data-on-click="window.location.href = &#x27;/registration&#x27;"
+                                            >
+                                                <svg
+                                                    fill="currentColor"
+                                                    width="1em"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    class="w-5 h-5"
+                                                    style="width: 1.25rem; height: 1.25rem;"
+                                                    viewBox="0 0 24 24"
+                                                    height="1em"
+                                                >
+                                                    <use xlink:href="/sprites/lucide.svg#user-plus"></use>
+                                                </svg>
+                                                <span>Register Now</span>
+                                            </button>
+
+                                            <!-- Social Links -->
+                                            <div id="b9a0ff51-46d9-4489-8e57-b4d5cc0c6dcd" class="flex justify-center gap-4 mt-6" style="display: flex; justify-content: center; gap: 1rem; margin-top: 1.5rem;">
+                                                <a id="0e7e3fb4-05d6-4501-af9a-630000b2a630" class="text-white/70 hover:text-white transition-colors p-2 hover:bg-white/10 rounded-lg" style="color: rgba(255, 255, 255, 0.7); transition-property: color, background-color, border-color, text-decoration-color, fill, stroke; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-duration: 150ms; padding: 0.5rem; border-radius: 0.5rem;" href="https://x.com/IIIC_India" mediaPrefix="">
+                                                    <svg id="1711c3f9-4c0d-48f7-96c0-69778fa78d6a" class="w-5 h-5" style="width: 1.25rem; height: 1.25rem;" width="1em" height="1em" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                        <use xlink:href="/sprites/lucide.svg#twitter"></use>
+                                                    </svg>
+                                                </a>
+                                                <a id="3b93b91b-bf1d-4b64-9a5e-a6e61988398f" class="text-white/70 hover:text-white transition-colors p-2 hover:bg-white/10 rounded-lg" style="color: rgba(255, 255, 255, 0.7); transition-property: color, background-color, border-color, text-decoration-color, fill, stroke; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-duration: 150ms; padding: 0.5rem; border-radius: 0.5rem;" href="https://www.linkedin.com/company/13205292/admin/dashboard/" mediaPrefix="">
+                                                    <svg id="5f8855a9-1e18-4b76-89f9-ba8ae725f8ea" class="w-5 h-5" style="width: 1.25rem; height: 1.25rem;" width="1em" height="1em" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                        <use xlink:href="/sprites/lucide.svg#linkedin"></use>
+                                                    </svg>
+                                                </a>
+                                                <a
+                                                    id="74b2cfbb-b9db-4bbc-a2db-3c09f95ecaa7"
+                                                    class="text-white/70 hover:text-white transition-colors p-2 hover:bg-white/10 rounded-lg"
+                                                    style="color: rgba(255, 255, 255, 0.7); transition-property: color, background-color, border-color, text-decoration-color, fill, stroke; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-duration: 150ms; padding: 0.5rem; border-radius: 0.5rem;"
+                                                    href="https://www.instagram.com/impactinvestorscouncil?igsh=c3JzM21tYmJkcXA4"
+                                                    mediaPrefix=""
+                                                >
+                                                    <svg
+                                                        fill="currentColor"
+                                                        width="1em"
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        id="4215eef0-fae2-4de5-9e63-6d9670a1e0cd"
+                                                        class="w-5 h-5"
+                                                        style="width: 1.25rem; height: 1.25rem;"
+                                                        mediaPrefix=""
+                                                        viewBox="0 0 24 24"
+                                                        height="1em"
+                                                    >
+                                                        <use xlink:href="/sprites/lucide.svg#instagram"></use>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                            <p id="fdc1a2da-6350-4a83-8a88-7aa502418055" class="text-center text-sm text-white/60 mt-4" style="text-align: center; font-size: 0.875rem; line-height: 1.25rem; color: rgba(255, 255, 255, 0.6); margin-top: 1rem;">ranjna.khanna@iiic.in</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
