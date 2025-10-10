@@ -3786,6 +3786,66 @@
                 }
             }
         </style>
+        <style>
+            /* Carousel responsive styles */
+            /* Mobile devices (up to 767px) */
+            @media (max-width: 767px) {
+                #d4113478-25b3-4c7a-87b7-a6f4ead8692f {
+                    max-width: calc(100vw - 4rem) !important;
+                    overflow: hidden !important;
+                    padding-left: 1rem !important;
+                    padding-right: 1rem !important;
+                }
+                #d4113478-25b3-4c7a-87b7-a6f4ead8692f > .relative {
+                    overflow: hidden !important;
+                    max-width: 100% !important;
+                }
+                #carousel-track {
+                    max-width: none !important;
+                    overflow: visible !important;
+                }
+                /* Show only 2 cards on mobile */
+                #carousel-track > div {
+                    width: calc(75% - 1rem) !important;
+                    min-width: calc(75% - 1rem) !important;
+                    flex-shrink: 0 !important;
+                }
+            }
+            
+            /* Tablet devices (768px to 1023px) */
+            @media (min-width: 768px) and (max-width: 1023px) {
+                #d4113478-25b3-4c7a-87b7-a6f4ead8692f {
+                    max-width: calc(100vw - 6rem) !important;
+                    overflow: hidden !important;
+                    padding-left: 2rem !important;
+                    padding-right: 2rem !important;
+                }
+                #d4113478-25b3-4c7a-87b7-a6f4ead8692f > .relative {
+                    overflow: hidden !important;
+                    max-width: 100% !important;
+                }
+                #carousel-track {
+                    max-width: none !important;
+                    overflow: visible !important;
+                }
+            }
+            
+            /* Desktop and beyond (1024px+) */
+            @media (min-width: 1024px) {
+                #d4113478-25b3-4c7a-87b7-a6f4ead8692f {
+                    max-width: none !important;
+                    overflow: visible !important;
+                }
+                #d4113478-25b3-4c7a-87b7-a6f4ead8692f > .relative {
+                    overflow: visible !important;
+                    max-width: none !important;
+                }
+                #carousel-track {
+                    max-width: none !important;
+                    overflow: visible !important;
+                }
+            }
+        </style>
         <script defer type="text/javascript">
             var fulcro_network_csrf_token = "/MqHF7QRn03Tx1Y/BIzCWJi1QiThuOsMhCu8JVt6+vP3eNoK3Msq/6ZmbkazaVikktYeAskm/U3nGrua";
         </script>
@@ -6024,7 +6084,7 @@
                     
                     <div id="d4113478-25b3-4c7a-87b7-a6f4ead8692f" class="border-box relative" mediaPrefix="" devMode="">
     <!-- Carousel Container -->
-    <div class="relative hidden">
+    <div class="relative">
         <!-- Cards Container -->
         <div 
             id="carousel-track" 
@@ -8828,7 +8888,7 @@
 </div>
                     
                     
-<div id="d4113478-25b3-4c7a-87b7-a6f4ead8692f" class="border-box grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 auto-rows-min" mediaPrefix="" devMode="">
+<div id="d4113478-25b3-4c7a-87b7-a6f4ead8692f" class="border-box grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 auto-rows-min hidden" mediaPrefix="" devMode="">
                         <div
                             id="e3ceeab2-dadc-4641-8de5-84172dc2115c"
                             class="block bg-gradient-to-br from-white to-green-50 dark:from-gray-800 dark:to-green-900/20 rounded-xl shadow-lg overflow-hidden border border-green-100 dark:border-green-900/30 transition-all duration-300 hover:shadow-xl hover:translate-y-[-5px]"
@@ -11604,11 +11664,12 @@
                             </div>
                         </div>
                     </div>
-                    <div id="12479bc5-e536-443f-8cf4-7543f10a46e4" class="border-box text-center mt-12 hidden" mediaPrefix="" devMode="">
+                    <div id="12479bc5-e536-443f-8cf4-7543f10a46e4" class="border-box text-center mt-12" mediaPrefix="" devMode="">
                         <button
                             id="373ce8fc-d297-4333-b282-0a4e20643bda"
                             class="inline-flex items-center justify-center focus:outline-none px-6 py-3 bg-gradient-to-r from-green-600 to-emerald-500 hover:from-green-700 hover:to-emerald-600 text-white font-medium rounded-full shadow-md hover:shadow-lg transition-all duration-300"
                             content="View All Speakers"
+                            data-on-click="window.location.href='https://indiagreeninvestment.com/speakers'"
                         >
                             View All Speakers
                         </button>
