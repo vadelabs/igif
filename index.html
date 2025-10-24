@@ -28791,4 +28791,72 @@ thoughtful manner."
     window.addEventListener('resize', updateCarousel);
 })();
 </script>
+
+<!-- Hash-based tab navigation -->
+<script>
+(function() {
+    // Function to scroll to agenda section with offset
+    function scrollToAgenda() {
+        const agendaSection = document.getElementById('agenda');
+        if (agendaSection) {
+            // Get the position of the agenda section
+            const elementPosition = agendaSection.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - 40; // 40px offset
+            
+            // Smooth scroll to the calculated position
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+            });
+        }
+    }
+
+    // Function to set tab based on hash
+    function setTabFromHash() {
+        const hash = window.location.hash.slice(1); // Remove the '#'
+        const validTabs = ['day-01', 'day-02', 'day-04'];
+        
+        if (hash && validTabs.includes(hash)) {
+            // Wait for Datastar to be ready, then set the signal
+            setTimeout(() => {
+                const tabElement = document.getElementById('51072c02-72c4-4786-889f-bb9577d2d256');
+                if (tabElement && window.datastar) {
+                    // Trigger Datastar to update the signal
+                    window.datastar.store.$51072c02_72c4_4786_889f_bb9577d2d256 = { value: hash };
+                } else {
+                    // Fallback: manually click the correct button
+                    const button = document.querySelector(`button[data-value="${hash}"]`);
+                    if (button) {
+                        button.click();
+                    }
+                }
+                
+                // Scroll to agenda section after a short delay to ensure tab is switched
+                setTimeout(scrollToAgenda, 200);
+            }, 100);
+        }
+    }
+
+    // Set tab on initial load
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', setTabFromHash);
+    } else {
+        setTabFromHash();
+    }
+
+    // Optional: Update hash when tabs are clicked (for bookmarking/sharing)
+    document.addEventListener('click', function(e) {
+        const tabButton = e.target.closest('button[role="tab"][data-value]');
+        if (tabButton) {
+            const tabValue = tabButton.getAttribute('data-value');
+            if (tabValue) {
+                history.replaceState(null, null, '#' + tabValue);
+            }
+        }
+    });
+
+    // Handle browser back/forward buttons
+    window.addEventListener('hashchange', setTabFromHash);
+})();
+</script>
 </body>
